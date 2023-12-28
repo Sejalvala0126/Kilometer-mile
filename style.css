@@ -1,0 +1,35 @@
+body{
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 35px;
+    background-color: tan;
+}
+
+h1{
+    text-decoration: underline;
+    font-size: 50px;
+    color: darkmagenta;
+}
+
+.btn{
+    font-size: 35px;
+    border-radius: 8px;
+    width: 280px;
+    transition: 0.5s;
+
+}
+
+.btn:hover{
+    width: 280px;
+    background-color: skyblue;
+    border-radius: 30px;
+}
+
+#kilometers{
+    font-size: 35px;
+    color: firebrick;
+}
+
+#result{
+    color: green;
+}

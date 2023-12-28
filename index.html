@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>KM to Miles</title>
+</head>
+
+<body>
+    <h1>KILOMETERS TO MILES CONVERTER</h1>
+    <label for="kilometers">Enter Distance In Kilometers:</label>
+    <input type="number" id="kilometers" placeholder="Enter Kilometers">
+    <br><br>
+    <button class="btn" onclick="convertToMiles()">Convert to Miles</button>
+    <p id="result">The Distance In Miles Will Be Displayed Here.</p>
+    <script>
+        function convertToMiles() {
+            
+            let kilometers = parseFloat(document.getElementById('kilometers').value);
+            
+            if (isNaN(kilometers)) {
+                document.getElementById('result').innerText = "Please enter a valid number.";
+            } else {
+               
+                let miles = kilometers * 0.621371;
+               
+                document.getElementById('result').innerText = `${kilometers} Kilometers Is Approximately ${miles.toFixed(5)} Miles.`;
+            }
+        }
+    </script>
+</body>
+
+</html>
